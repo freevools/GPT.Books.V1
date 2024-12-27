@@ -1,0 +1,12 @@
+йцу;йцу;false
+qwe;qwer;false
+qq;ww;false
+qwq;q;false
+qqqq;wwww;false
+eee;ewq;false
+ghbdtn;ghbdtn;true
+f;f;false
+aa;aa;false
+rr;597c28c381ef1feee61f3e9677a628b4cbd41cfb2539c8938062e1df2a882d39;false
+ee;597c28c381ef1feee61f3e9677a628b4cbd41cfb2539c8938062e1df2a882d39;false
+qwqw;f98204ba6963009734f0398a80f8e44f9d3ef74ebb9c49e5d4f000bd1c102d29;true
