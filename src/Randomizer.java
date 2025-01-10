@@ -1,3 +1,4 @@
+//не используется в программе
 public class Randomizer {
     private long seed;
     public Randomizer() {

@@ -14,7 +14,6 @@ public class UserService {
         }
         return false;
     }
-
     //Если пользователь существует, возвращает true
     public static boolean userExists(String username){
         boolean exists = false;

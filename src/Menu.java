@@ -20,7 +20,6 @@ public class Menu {
         books = fileHandler.readBooks();
         isRunning = true;
     }
-    //при регистрации записывает в файл user.txt нового пользователя
     public void startMenu() {
         int userChoice;
         while (isRunning) {
@@ -41,6 +40,7 @@ public class Menu {
             }
         }
     }
+    //проверка, чтобы пользователь ввёл валидные данные
     private int getUserChoice(int maxMenuOption){
         boolean isValid = false;
         int selectedMenuOption = 0;
@@ -61,10 +61,12 @@ public class Menu {
         }
         return selectedMenuOption;
     }
+    //отображение меню аутентификации
     private void showAuthenticationMenu(){
         System.out.println("1.Регистрация");
         System.out.println("2.Вход");
     }
+    //отображение меню администратора
     private void showAdminMainMenu() {
         System.out.println("1.Добавить книгу");
         System.out.println("2.Показать все книги");
@@ -72,11 +74,13 @@ public class Menu {
         System.out.println("4.Редактировать книгу");
         System.out.println("5.Выйти");
     }
+    //отображение меню пользователя
     private void showUserMainMenu() {
         System.out.println("1.Добавить книгу");
         System.out.println("2.Показать все книги");
         System.out.println("3.Выйти");
     }
+    //обработка выбора пункта меню аутентификации и регистрации
     private void handleAuthentication(int selectedMenuOption) {
         switch (selectedMenuOption) {
             case 1:
@@ -89,6 +93,7 @@ public class Menu {
                 System.out.println("Некорректный пункт меню.");
         }
     }
+    //обработка выбора пункта меню администратора
     private void handleAdminMainMenuChoice(int selectedMenuOption){
         switch (selectedMenuOption) {
             case 1:
@@ -112,6 +117,7 @@ public class Menu {
                 isRunning = false;
         }
     }
+    //обработка выбора пункта меню пользователя
     private void handleUserMainMenuChoice(int selectedMenuOption){
         switch (selectedMenuOption) {
             case 1:
@@ -127,10 +133,4 @@ public class Menu {
                 isRunning = false;
         }
     }
-
-
-
-
-
-
 }

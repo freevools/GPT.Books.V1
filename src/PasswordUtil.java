@@ -1,6 +1,6 @@
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
-
+//класс отвечает за шифрование паролей пользователей в SHA-256
 public class PasswordUtil {
     public static String hashPassword(String password) {
         try {

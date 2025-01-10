@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+//класс отвечает за регистрацию и аутентификацию пользователя в программе
 public class AuthenticationService {
     private User currentUser;
     private final Scanner scanner;
@@ -40,6 +40,7 @@ public class AuthenticationService {
         }
         fileHandler.saveUser(new User(username, password, false));
     }
+    //выводит меню аутентификации пользователя и назначает currentUser
     public void loginUser() {
         System.out.println("Введите логин: ");
         String username = scanner.nextLine();

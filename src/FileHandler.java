@@ -4,10 +4,13 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+//класс для чтения данных из файла и записью данных в файлы
+
 public class FileHandler {
     private final String BOOKS_FILE = "src/resources/book.txt";
     private final String USERS_FILE = "src/resources/users.txt";
 
+    //записывает данные в файл book.txt
     public void saveBooks(ArrayList<Book> books) {
         try(FileWriter writer = new FileWriter(BOOKS_FILE)){
             for (int i = 0; i < books.size(); i++) {
@@ -19,6 +22,7 @@ public class FileHandler {
             System.err.println("Error writing to file: " + e.getMessage());
         }
     }
+    //считывает данные из book.txt и возвращает список книг
     public ArrayList<Book> readBooks() {
         ArrayList<Book> books = new ArrayList<>();
         try(Scanner fileScanner = new Scanner(new File(BOOKS_FILE))){
@@ -34,18 +38,18 @@ public class FileHandler {
                         int year = Integer.parseInt(line[3]);
                         books.add(new Book(title, author, year));
                     }catch (NumberFormatException e){
-                        System.out.println("Error converting year of publication: " + e.getMessage());
+                        System.out.println("Неверный год издания книги: " + e.getMessage());
                     }
                 }else {
-                    System.out.println("Invalid line.");
+                    System.out.println("Недопустимая строка");
                 }
             }
         }catch (Exception e) {
-            System.err.println("Error reading from file: " + e.getMessage());
+            System.err.println("Ошибка при чтении из файла: " + e.getMessage());
         }
         return books;
     }
-    //При регистрации пользователя, записывает его данные в файл users.txt
+    //записывает пользовательские данные в файл users.txt
     public void saveUser(User user){
         try(FileWriter writer = new FileWriter(USERS_FILE, true)){
             writer.write(user.toString() + "\n");
@@ -54,7 +58,7 @@ public class FileHandler {
             System.err.println("Ошибка при записи в файл: " + e.getMessage());
         }
     }
-    //Читает данные из файла users.txt и возвращает список пользователей
+    //считывает данные из файла users.txt и возвращает список пользователей
     public ArrayList<User> readUsers() {
         ArrayList<User> users = new ArrayList<>();
         try(Scanner fileScanner = new Scanner(new File(USERS_FILE))){

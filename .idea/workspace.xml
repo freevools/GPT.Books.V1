@@ -5,16 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f11c2d4b-b6b3-4486-97e2-562a729fd4a4" name="Changes" comment="edit and delete books">
-      <change afterPath="$PROJECT_DIR$/src/AuthenticationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PasswordUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Randomizer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/users.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuthenticationService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FileHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/book.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/book.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PasswordUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PasswordUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Randomizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Randomizer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
